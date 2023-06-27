@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meat name="viewport" content=""width=device-width, initial-scale="1.0" />
+        <!-- 告訴瀏覽器，網頁編碼是 utf-8(萬國碼) -->
+        <meta charset="utf-8" />
+        <title>JavaScript 陣列物件</title>
+    </head>
+
+    <body>
+        <script>
+            // 建立陣列物件
+            let grades=[25,100,91];
+            grades.push(70); 
+            grades.push(86);
+            grades.push(64);
+            console.log(grades);
+            console.log(grades.length);
+            console.log(grades[3]);
+            console.log(grades[2]);
+
+            // 利用for迴圈，逐一取得陣列中的資料
+            for(let i=0;i<grades.length;i++){
+                // console.log(i);
+                console.log(grades[i]);
+            }
+
+            // 算平均數，先算總和
+            let total=0;
+            for(let i=0;i<grades.length;i++){
+                total=total+grades[i];
+            }
+            let avg=total/grades.length;
+            console.log(avg);
+        </script>
+    </body>
+</html>
